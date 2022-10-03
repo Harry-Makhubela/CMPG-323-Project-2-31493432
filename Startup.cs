@@ -34,7 +34,7 @@ namespace Project_2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:Def"));
+            //services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:Def"));
 
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v2", new OpenApiInfo
